@@ -10,7 +10,14 @@
 <%
 String s1=request.getParameter("uname");
 String s2=request.getParameter("pwd");
-out.println("<h1>Welcome:"+s1);
+if (s1.equalsIgnoreCase("Admin"))
+{
+	out.println("Wleocme "+s1);
+}
+else
+{
+	out.println("Invalid User");
+}
 %>
 </body>
 </html>
